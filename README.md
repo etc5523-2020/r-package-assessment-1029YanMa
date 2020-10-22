@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/etc5523-2020/r-package-assessment-1029YanMa/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-1029YanMa/actions)
 <!-- badges: end -->
 
 The goal of cwdcovid19 is to …
