@@ -35,6 +35,7 @@ This package contains the dataset from the 'coronavirous' R package and provide 
 ```{r example-data}
 library(cwdcovid19)
 library(tibble)
+library(dplyr)
 
 coronavirus %>% 
   head(10)

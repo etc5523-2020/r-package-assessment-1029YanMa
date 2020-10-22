@@ -27,6 +27,15 @@ provide a long form and a wide form of the data:
 ``` r
 library(cwdcovid19)
 library(tibble)
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
 
 coronavirus %>% 
   head(10)
