@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# cwdcovid19
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of cwdcovid19 is to ...
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("etc5523-2020/r-package-assessment-1029YanMa")
+```
+## Example
+
+This package contains the dataset from the 'coronavirous' R package and provide a long form and a wide form of the data:
+
+```{r example-data}
+library(cwdcovid19)
+library(tibble)
+
+coronavirus %>% 
+  head(10)
+
+coronavirus_long %>% 
+  head(10)
+
+coronavirus_wide %>% 
+  head(10)
+```
+
+
