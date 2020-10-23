@@ -1,0 +1,13 @@
+template:
+  params:
+    bootswatch: cerulean
+
+navbar:
+  structure:
+    left: [Blogsite]
+    right: [github]
+  components:
+    home: ~
+    Blogsite:
+      text: COVID19 data explore website
+      href: https://etc5523-blog-yanma.netlify.app/

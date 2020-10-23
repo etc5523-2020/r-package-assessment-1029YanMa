@@ -1,0 +1,68 @@
+---
+title: "cwdcovid19"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{cwdcovid19}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(cwdcovid19)
+library(dplyr)
+```
+<h1>Explore the COVID-19 daily cases data of Chile and Bolivia</h1>
+<br>
+<h2>Data provided by this package</h2>
+
+<br>
+
+<h3>The original dataset</h3>
+
+```{r data}
+coronavirus %>% 
+  head(5)
+```
+
+<h3>The long format dataset</h3>
+
+```{r data_long}
+coronavirus_long %>% 
+  head(5)
+```
+
+<br>
+
+<h3>The wide format dataset</h3>
+
+```{r data_wide}
+coronavirus_wide %>% 
+  head(5)
+```
+
+<br>
+
+<h2>Launch the shiny app within this package</h2>
+
+- You could use the launch_dt() function to see the datatable of COVID-19 daily cases data of Chile or Bolivia. Please note that **don't put anything in the ()**, otherwise there will be an error. You could switch the country you want to explore in the shiny app after run this function.
+
+- You could use the launch_confirm_period() function to see the line plot of confirmed cases data of Chile and Bolivia, and compare the data gap between the two countries within your selected time period. Please note that **don't put anything in the ()**, otherwise there will be an error. You could select your interested time period in the shiny app after run this function.
+
+- By running the launch_app() function, you could see both the timetable and plot.
+
+<br>
+
+<h2>Explore more</h2>
+
+There's another function: n_countries() in this package. This would provide some space for the users to explore the dataset by themselves. For example, maybe you would like to know how many countries reported newly confirmed cases on a certain date.
+
+
+
+
