@@ -117,7 +117,7 @@ coronavirus_wide %>%
 
 ## Explore more…
 
-There’s another function: n\_countries() in this package. This would
+There’s another function: n_countries() in this package. This would
 provide some space for the users to explore the dataset by themselves.
 For example, maybe you would like to know how many countries reported
 newly confirmed cases on a certain date.
