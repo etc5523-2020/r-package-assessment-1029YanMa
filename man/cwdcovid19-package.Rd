@@ -6,7 +6,7 @@
 \alias{cwdcovid19-package}
 \title{cwdcovid19: Communicating With Data Course Assignment COVID19 Data Explore Package}
 \description{
-This package contains the shiny app which explores the data of COVID-19. This is an package for cwd course assignment.
+This package contains the shiny app which explores the data of COVID-19. This is an package for cwd course assignment. You could use this package to check the daily COVID-19 cases data of Chile or Bolivia using the launch_dt() function. Or use the launch_confirm_period() function to see the confirmed cases of your selected time period in these two country.
 }
 \seealso{
 Useful links:

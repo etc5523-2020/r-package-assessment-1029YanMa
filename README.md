@@ -3,6 +3,17 @@
 
 # cwdcovid19
 
+<br>
+
+This package contains the shiny app which explores the data of COVID-19.
+This is an package for cwd course assignment. You could use this package
+to check the daily COVID-19 cases data of Chile or Bolivia using the
+launch\_dt() function. Or use the launch\_confirm\_period() function to
+see the confirmed cases of your selected time period in these two
+country.
+
+<br>
+
 <!-- badges: start -->
 
 [![R build
@@ -83,3 +94,30 @@ coronavirus_wide %>%
 #>  9 2020-01-30 Afghanistan <int [1]> <int [1]> <int [1]>
 #> 10 2020-01-31 Afghanistan <int [1]> <int [1]> <int [1]>
 ```
+
+## Launch the shiny app within this package
+
+  - You could use the launch\_dt() function to see the datatable of
+    COVID-19 daily cases data of Chile or Bolivia. Please note that
+    **don’t put anything in the ()**, otherwise there will be an error.
+    You could switch the country you want to explore in the shiny app
+    after run this function.
+
+  - You could use the launch\_confirm\_period() function to see the line
+    plot of confirmed cases data of Chile and Bolivia, and compare the
+    data gap between the two countries within your selected time period.
+    Please note that **don’t put anything in the ()**, otherwise there
+    will be an error. You could select your interested time period in
+    the shiny app after run this function.
+
+  - By running the launch\_app() function, you could see both the
+    timetable and plot.
+
+<br>
+
+## Explore more…
+
+There’s another function: n\_countries() in this package. This would
+provide some space for the users to explore the dataset by themselves.
+For example, maybe you would like to know how many countries reported
+newly confirmed cases on a certain date.
