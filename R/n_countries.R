@@ -7,5 +7,5 @@
 library(dplyr)
 
 n_countries <- function(data){
-  n_distinct(data$country)
+  dplyr::n_distinct(data$country)
 }

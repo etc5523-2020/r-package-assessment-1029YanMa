@@ -1,0 +1,26 @@
+---
+title: "cwdcovid19"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{cwdcovid19}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(cwdcovid19)
+library(dplyr)
+```
+
+```{r data_long}
+coronavirus_long %>% 
+  head(5)
+```
+
