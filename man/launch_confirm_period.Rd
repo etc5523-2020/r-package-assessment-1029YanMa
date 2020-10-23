@@ -2,10 +2,10 @@
 % Please edit documentation in R/confirm_period.R
 \name{launch_confirm_period}
 \alias{launch_confirm_period}
-\title{run datatable of the shiny app}
+\title{run the confirmd cases plot of the shiny app}
 \usage{
 launch_confirm_period()
 }
 \description{
-run datatable of the shiny app
+run the confirmd cases plot of the shiny app
 }

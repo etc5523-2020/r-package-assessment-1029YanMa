@@ -39,6 +39,13 @@ country_name <- c("Chile", "Bolivia")
 
 #-------------------ui---------------------------
 ui <- fluidPage(
+  theme = shinytheme("cerulean"),
+
+  h1("COVID-19 Data Explore -- Chile and Bolivia"),
+  br(),
+  h3("Compare the Trends of New Confirmed Cases of Chile and Bolivia by Your Input Date Range"),
+  br(),
+  p("By selecting the start and end date, you can see the trend of newly confirmed cases in the two countries on each day in this time period. And you can also check the number of new cases of each day by pointing at the line of the plot."),
   sidebarLayout(
     sidebarPanel(dateRangeInput(inputId = "daterange",
                                 label = "Please Select the Start and End Date",

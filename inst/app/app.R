@@ -72,17 +72,7 @@ ui <- fluidPage(
         end = max(coronavirus$date)
     ),
     plotlyOutput("range_plot"),
-    br(),
-
-    h3("Compare the Trends of Your Selected Indicator of Chile and Bolivia"),
-    br(),
-    p("While there are multiple indicators of our data, such as the ratio of recovery, the cumulative number of confirmed cases, it's convenient if we plot the trend of each indicator to see it's changes and to figure out how the corona virus was spreaded in the two countries. You can select the indicator you are interested in and see the trend plot.And you can also check the value of this indicator on each day by pointing at the line of the plot."),
-    selectInput(inputId = "select_indicator",
-                label = "Please Select an Indicator to See It's Trend",
-                choices = c("confirm_cum", "recover_cum", "death_cum",
-                            "recover_ratio", "death_ratio"),
-                selected = "recover_ratio"),
-    plotlyOutput("indicator_plot")
+    br()
     )
 
 
@@ -111,17 +101,6 @@ server <- function(input, output, session) {
             geom_line(aes(x = date, y = confirmed, color = country))
 
         ggplotly(plot_range)
-    })
-
-    output$indicator_plot <- renderPlotly({
-
-        plot_indicator <- ratios %>%
-            filter(country == c("Chile", "Bolivia")) %>%
-            filter(date > as.Date("2020-03-10")) %>%
-            ggplot(aes_string(x = "date", y = input$select_indicator, color = "country")) +
-            geom_line()
-
-        ggplotly(plot_indicator)
     })
 
 

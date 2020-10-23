@@ -1,4 +1,4 @@
-#' run shiny app
+#' run the whole shiny app which contains a datatable and a plotly plot
 #' @export
 launch_app <- function() {
   appDir <- system.file("app", package = "cwdcovid19")

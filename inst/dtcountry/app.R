@@ -41,6 +41,14 @@ country_name <- c("Chile", "Bolivia")
 
 #--------------------------ui-----------------------------
 ui <- fluidPage(
+  theme = shinytheme("cerulean"),
+
+  h1("COVID-19 Data Explore -- Chile and Bolivia"),
+  br(),
+  h3("Daily Cases Data of Your Selected Country"),
+  br(),
+  p("You can check the daily data of COVID-19 of Chile and Bolivia in the following table. By clicking the 'Please Select a Country', you can swicth the country to see the data of that country. And by typing a date in the search box, you can see the data of that day."),
+  p("This table provides the data of (1) newly confirmed, recovered and dead cases; (2) the cumulative cases; (3) the ratio of recovery and death."),
   sidebarLayout(sidebarPanel(selectInput(inputId = "select_country",
                                          label = "Please Select a Country",
                                          choices = country_name,

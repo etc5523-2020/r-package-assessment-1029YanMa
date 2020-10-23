@@ -1,4 +1,4 @@
-#' run datatable of the shiny app
+#' run the confirmd cases plot of the shiny app
 #' @export
 launch_confirm_period <- function() {
   appDir <- system.file("confirm_period", package = "cwdcovid19")

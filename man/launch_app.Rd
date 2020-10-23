@@ -2,10 +2,10 @@
 % Please edit documentation in R/launch_app.R
 \name{launch_app}
 \alias{launch_app}
-\title{run shiny app}
+\title{run the whole shiny app which contains a datatable and a plotly plot}
 \usage{
 launch_app()
 }
 \description{
-run shiny app
+run the whole shiny app which contains a datatable and a plotly plot
 }
