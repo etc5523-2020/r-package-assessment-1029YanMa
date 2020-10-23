@@ -8,12 +8,15 @@
 An object of class \code{data.frame} with 211184 rows and 7 columns.
 }
 \source{
-
+data used in this package was extracted from the R package \link{coronavirus}(R package 'coronavirus').
 }
 \usage{
 coronavirus
 }
 \description{
 The coronavirus dataset is from the R package 'coronavirus'. There are 189 countries in this dataset.
+Daily COVID-19 cases data of each country was provided in the dataset, which contains confirmed / recovered / deeath.
+This package also provides a tidy long format and a wide format dataset of coronavirous.
+Please use 'cwdcovid19::coronavirus_long' and 'cwdcovid19::coronavirus_wide' to view them.
 }
 \keyword{datasets}
