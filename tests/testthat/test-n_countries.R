@@ -5,8 +5,7 @@ test_that("output correctness test", {
     189
   )
 
-  x <- coronavirus_long %>%
-    filter(country == c("Chile", "Bolivia"))
+  x <- dplyr::filter(coronavirus_wide, country == c("Chile", "Bolivia"))
   expect_equal(
     n_countries(x),
     2
