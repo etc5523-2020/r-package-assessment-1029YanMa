@@ -4,7 +4,7 @@
 #' @export
 #'
 "n_countries"
-library(dplyr)
+
 
 n_countries <- function(data){
   dplyr::n_distinct(data$country)
