@@ -3,9 +3,9 @@
 library(readr)
 library(dplyr)
 library(magrittr)
-library(coronavirus)
-update_dataset()
-data(coronavirus)
+
+
+coronavirus <- read.csv("https://github.com/RamiKrispin/coronavirus/blob/master/csv/coronavirus.csv")
 
 coronavirus_long <- coronavirus %>%
   select(date, country, type, cases)

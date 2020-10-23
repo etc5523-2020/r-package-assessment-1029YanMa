@@ -2,15 +2,11 @@ library(shiny)
 library(shinythemes)
 library(dplyr)
 library(tidyverse)
-devtools::install_github("RamiKrispin/coronavirus")
-library(coronavirus)
-update_dataset()
 library(DT)
 library(lubridate)
 library(ggplot2)
 library(plotly)
 library(zoo)
-data(coronavirus)
 
 
 
